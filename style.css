@@ -1,0 +1,99 @@
+/* definicoes gerais para centralizar o conteudo na tela */
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* caixa principal que organiza os elementos do quiz */
+.container {
+    background-color: #16213e;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* classe auxiliar para esconder as telas nao utilizadas */
+.oculta {
+    display: none;
+}
+
+/* organizacao dos botoes de opcao em coluna */
+.opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* estilo dos botoes inspirado no site friv antigo */
+.botao-friv {
+    background-color: #e94560;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    /* sombra que cria o efeito tridimensional de botao */
+    box-shadow: 0px 8px 0px #b02a43;
+    transition: all 0.1s;
+    text-transform: lowercase;
+}
+
+/* efeito visual quando o rato passa por cima do botao */
+.botao-friv:hover {
+    transform: translateY(-2px);
+    background-color: #ff5473;
+    box-shadow: 0px 10px 0px #b02a43;
+}
+
+/* efeito de clique que faz o botao afundar como um jogo */
+.botao-friv:active {
+    transform: translateY(8px);
+    box-shadow: 0px 0px 0px transparent;
+}
+
+/* variante de cor verde para os botoes de acao principal */
+.cor-verde {
+    background-color: #0f8b8d;
+    box-shadow: 0px 8px 0px #095d5f;
+}
+
+.cor-verde:hover {
+    background-color: #14a3a6;
+    box-shadow: 0px 10px 0px #095d5f;
+}
+
+/* formatacao da imagem do personagem vencedor */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+    border: 4px solid #0f8b8d;
+}
+
+/* destaque para a pontuacao final exibida no fim */
+#pontos-vencedor {
+    color: #ffaa00;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* ajuste para o texto das perguntas */
+h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
